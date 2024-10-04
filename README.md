@@ -49,7 +49,7 @@ File Structure
     - css/style.css    # Styling for the frontend
     - js/app.js        # JavaScript file to interact with the Ethereum contract
 - contracts/
-    - Marketplace.sol  # Smart contract code
+    - AIDecentralizedMarketplace.sol  # Smart contract code
 - README.md            # Project documentation
 - app.js               # Backend server for serving the web application
 - package.json         # Dependencies and scripts
