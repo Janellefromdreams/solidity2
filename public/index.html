@@ -1,0 +1,111 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDecentralized Marketplace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form, .model-item, #withdrawFundsSection {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .model-item button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .purchase-btn {
+            background-color: #28a745;
+        }
+        .rate-btn {
+            background-color: #17a2b8;
+        }
+        .details-btn {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .model-item hr {
+            margin-top: 15px;
+            border: none;
+            border-top: 1px solid #eee;
+        }
+        #withdrawFundsButton {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #modelList {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .model-item {
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .model-item {
+                width: 100%;
+            }
+        }
+        .rating-form {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AIDecentralized Marketplace</h1>
+
+    <!-- Form to List a New AI Model -->
+    <h2>List a New AI Model</h2>
+    <form id="createModelForm">
+        <input type="text" id="createModelName" placeholder="Model Name" required />
+        <input type="text" id="createModelDescription" placeholder="Model Description" required />
+        <input type="number" id="createModelPrice" placeholder="Model Price (in ETH)" required min="0" step="any" />
+        <button type="submit">List Model</button>
+    </form>
+
+    <!-- List of Available Models -->
+    <h2>Available Models</h2>
+    <div id="modelList">
+        <!-- Models will be dynamically inserted here -->
+    </div>
+
+    <!-- Withdraw Funds (for Contract Owner) -->
+    <div id="withdrawFundsSection">
+        <h2>Withdraw Funds</h2>
+        <button id="withdrawFundsButton" onclick="withdrawFunds()">Withdraw Funds</button>
+    </div>
+
+    <!-- Include Web3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <!-- Include app.js -->
+    <script src="js/app.js"></script>
+</body>
+</html>
