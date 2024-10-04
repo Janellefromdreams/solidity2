@@ -19,8 +19,8 @@ The smart contract for the AI Decentralized Marketplace must be deployed on the 
 Make sure to update the contract address and ABI in app.js to match your deployed contract.
 Installation
 1. Clone the repository
-git clone https://github.com/your-username/AI-Decentralized-Marketplace.git
-cd AI-Decentralized-Marketplace
+git clone https://github.com/janellefromdreams/solidity2.git
+cd solidity2
 2. Install Dependencies
 npm install
 3. Start the Development Server
