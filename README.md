@@ -24,7 +24,7 @@ cd solidity2
 2. Install Dependencies
 npm install
 3. Start the Development Server
-node app.js
+node server.js
 4. Open the Application in Your Browser
 Open your browser and go to http://localhost:3000. Make sure MetaMask is installed and connected to the correct Ethereum network.
 
@@ -36,10 +36,7 @@ This will call the listModel function on the smart contract and list the model o
 Purchase a Model:
 
 Browse the available models in the marketplace.
-Click the "Purchase" button to buy the model. You will be prompted to confirm the transaction through MetaMask.
-Rate a Purchased Model:
 
-After purchasing a model, you can leave a rating using the "Rate Model" form.
 View Model Details:
 
 Click the "Details" button next to any model to view its full description and details.
